@@ -16,7 +16,7 @@ export default class TestForm extends LightningElement {
             console.log(data)
             this.name = getFieldValue(data, NAME_ACCOUNT);
             this.owner = getFieldValue(data, OWNER_NAME);
-            this.annual_revenue = getFieldDisplayValue(data.ANNUAL_REVENUE_ACCOUNT);
+            this.annual_revenue = getFieldDisplayValue(data, ANNUAL_REVENUE_ACCOUNT);
         }
     }
 
